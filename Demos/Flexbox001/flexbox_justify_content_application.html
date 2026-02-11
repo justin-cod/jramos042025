@@ -1,69 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Justify Content Application</title>
     <style>
-        #buttons
-        {
-            border: 2px solid sliver;
+      /* ul#list {
+            border: 1px solid black;
             padding: 1rem;
-            background-color: lightcoral;
-            width: 85%;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-        }
-        #list
-        {
-            background-color: lightyellow;
-            border: 1px solid silver;
-            list-style: none;
             display: flex;
             justify-content: space-evenly;
-            padding: 1rem;
-        }
+            list-style-type: none;
+            width: 50%;
+            margin: auto;
+        } */
     </style>
-</head>
 
-<body>
+    <style>
+      button {
+        padding: 0.5rem;
+      }
+
+
+.card-container {
+  display: flex;  
+  justify-content: space-around;
+  align-items: flex-start; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+
+.card {
+  width: 200px; 
+  padding: 20px;
+  border: 1px solid #000000;
+  background-color: lightblue;
+  border-radius: 8px;
+}
+
+    </style>
+  </head>
+
+  <style>
+    #buttons {
+      border: 2px solid black;
+      padding: 1rem;
+      background-color: lightcyan;
+      width: 85%;
+      margin: auto;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    #list {
+      border: 2px solid black;
+      padding: 1rem;
+      background-color: lightskyblue;
+      width: 50%;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+    }
+
+    #links {
+      border: 2px solid black;
+      padding: 1rem;
+      background-color: darkgrey;
+      width: 50%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+  </style>
+
+  <body>
     <h1>Flexbox Justify Content Application</h1>
 
     <h2>Lists</h2>
     <ul id="list">
-        <li>Inline</li>
-        <li>Block</li>
-        <li>Flexbox</li>
-        <li>Grid</li>
+      <li>Inline</li>
+      <li>Block</li>
+      <li>Flexbox</li>
+      <li>Grid</li>
     </ul>
 
     <h2>Buttons</h2>
+    <div id="buttons">
+      <button type="button">Button 1</button>
+      <button type="button">Button 2</button>
+      <button type="button">Button 3</button>
+      <button type="button">Button 4</button>
+      <button type="button">Button 5</button>
+    </div>
 
-<div id="buttons">
-        <button type="button">Button 1</button>
-        <button type="button">Button 2</button>
-        <button type="button">Button 3</button>
-        <button type="button">Button 4</button>
-        <button type="button">Button 5</button>
-    
-</div>
     <h2>Cards</h2>
-    <div class="card">
+    <div class="card-container">
+      <div class="card">
         <h3>Card Title 1</h3>
         <p>This is a description for card 1.</p>
-    </div>
-    <div class="card">
+      </div>
+      <div class="card">
         <h3>Card Title 2</h3>
         <p>This is a description for card 1.</p>
-    </div>
-    <div class="card">
+      </div>
+      <div class="card">
         <h3>Card Title 3</h3>
         <p>This is a description for card 1.</p>
-    </div>
+      </div>
+    </div class="card-container">
 
     <h2>Link Lists</h2>
     <ul>
+      <div id="links">
         <li><a href="https://google.com/">Google</a></li>
         <li><a href="https://google.com/">Google</a></li>
         <li><a href="https://google.com/">Google</a></li>
-        </li><a href="https://google.com/">Google</a></li>
+        <li><a href="https://google.com/">Google</a></li>
+      </div>
     </ul>
-</body>
-
+  </body>
 </html>
+z
