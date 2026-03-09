@@ -1,19 +1,27 @@
+/* Mobile View - Default */
+
+:root {
+  --primary-color: red;
+  --secondary-color: lightblue;
+  --tertiary-color: blue;
+  --main-font: arial;
+}
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: rgb(200, 26, 26);
+  background-color: var(--primary-color);
 }
 .container {
   min-height: 10rem;
   max-width: 70rem;
   margin: auto;
-  background-color: #fff;
+  background-color: none;
   padding: 1rem;
 }
 #pageheader {
-  background-color: rgb(41, 181, 246);
+  background-color: var(--secondary-color);
   min-height: auto;
   padding: 1rem;
 }
@@ -24,9 +32,10 @@ body {
   background-image: url(Images/portfoliologo.psd);
   background-position: center;
   background-size: cover;
+  margin: auto;
 }
 #pageheader .container {
-  background-color: none;
+  background-color: lightblue;
   min-height: auto;
   text-align: center;
 }
@@ -116,7 +125,7 @@ blockquote + span {
   min-height: auto;
 }
 #subfooter {
-  background-color: rgb(131, 131, 131);
+  background-color: var(--secondary-color);
   min-height: 10rem;
   padding: 1rem;
   text-align: center;
@@ -127,7 +136,17 @@ audio {
   background-color: rgb(3, 105, 3);
   border: 5px solid rgb(3, 105, 3);
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lightgray;
+  }
+  #logo {
+    margin: 0;
+  }
+}
+
+/* Tablet View */
+@media screen and (min-width: 600px) {
   #pageheader nav ul {
     background-color: none;
     margin-top: 2rem;
@@ -145,7 +164,7 @@ audio {
     background-color: blue;
   }
 }
-
+/* Desktop View */
 @media screen and (min-width: 1000px) {
   #pagecontent {
     background-color: blue;
