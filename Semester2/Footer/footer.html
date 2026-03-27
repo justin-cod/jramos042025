@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* Mobile design styles */
+      body {
+        background-color: rgb(91, 85, 85);
+        color: rgb(244, 182, 58);
+        line-height: 1.7;
+        margin: 0;
+      }
+      h1 {
+        padding: 1rem;
+        text-align: center;
+        color: rgb(144, 116, 59);
+      }
+      #pagefooter {
+        border-top: 2px solid black;
+        background-color: rgb(231, 108, 116);
+        padding: 1rem;
+        text-align: center;
+      }
+      #pagefooter > p {
+        /* border: 2px solid black; */
+        padding: 1rem;
+      }
+      #pagefooter > article {
+        /* border: 2px solid black; */
+        padding: 1rem;
+      }
+      i {
+        color: rgb(244, 182, 58);
+        font-size: 1.2rem;
+      }
+      i.fa-paw {
+        transform: rotate(45deg);
+      }
+      @media screen and (min-width: 700px) {
+        body {
+          background-color: rgb(17, 202, 244);
+        }
+        #pagefooter {
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Footer</h1>
+    <footer id="pagefooter">
+      <p>
+        <i class="fa-solid fa-paw"></i>paws & Whisckers <br />
+        Made with <i class="fa-solid fa-heart"></i> for fury friends <br />
+      </p>
+      <article>
+        <i class="fa-solid fa-phone"></i>559-444-5555 <br />
+        <i class="fa-solid fa-location-dot"></i>1234 Main Street Fresno, CA
+        93722 <br />
+        <i class="fa-solid fa-envelope"></i>randomemail@gmail.com <br />
+      </article>
+    </footer>
+  </body>
+</html>
